@@ -86,7 +86,7 @@ public:
 	void Free( H hnd );
 
 	Iterator Begin() { return data.begin(); }
-	Iterator End() { return data.end(); }
+	Iterator End() { return data.begin() + ( last + 1 ); }
 
 private:
 	// non-copyable
